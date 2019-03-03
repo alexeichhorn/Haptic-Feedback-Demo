@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C86F046A222C261100877AAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F0469222C261100877AAC /* AppDelegate.swift */; };
+		C86F046C222C261100877AAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F046B222C261100877AAC /* ViewController.swift */; };
+		C86F046F222C261100877AAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F046D222C261100877AAC /* Main.storyboard */; };
+		C86F0471222C261200877AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0470222C261200877AAC /* Assets.xcassets */; };
+		C86F0474222C261200877AAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F0472222C261200877AAC /* LaunchScreen.storyboard */; };
+		C86F0479222C261200877AAC /* Haptic Feedback Test WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C86F0478222C261200877AAC /* Haptic Feedback Test WatchKit App.app */; };
+		C86F047F222C261200877AAC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C86F047D222C261200877AAC /* Interface.storyboard */; };
+		C86F0481222C261200877AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0480222C261200877AAC /* Assets.xcassets */; };
+		C86F0488222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C86F0487222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C86F048D222C261200877AAC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F048C222C261200877AAC /* InterfaceController.swift */; };
+		C86F048F222C261200877AAC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F048E222C261200877AAC /* ExtensionDelegate.swift */; };
+		C86F0491222C261300877AAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F0490222C261300877AAC /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C86F047A222C261200877AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C86F045E222C261100877AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86F0477222C261200877AAC;
+			remoteInfo = "Haptic Feedback Test WatchKit App";
+		};
+		C86F0489222C261200877AAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C86F045E222C261100877AAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86F0486222C261200877AAC;
+			remoteInfo = "Haptic Feedback Test WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C86F0498222C261300877AAC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C86F0488222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F049C222C261300877AAC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				C86F0479222C261200877AAC /* Haptic Feedback Test WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C86F0466222C261100877AAC /* Haptic Feedback Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Haptic Feedback Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86F0469222C261100877AAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C86F046B222C261100877AAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C86F046E222C261100877AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C86F0470222C261200877AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86F0473222C261200877AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C86F0475222C261200877AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86F0478222C261200877AAC /* Haptic Feedback Test WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Haptic Feedback Test WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86F047E222C261200877AAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		C86F0480222C261200877AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86F0482222C261200877AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C86F0487222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Haptic Feedback Test WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86F048C222C261200877AAC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		C86F048E222C261200877AAC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		C86F0490222C261300877AAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86F0492222C261300877AAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C86F0463222C261100877AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F0484222C261200877AAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C86F045D222C261100877AAC = {
+			isa = PBXGroup;
+			children = (
+				C86F0468222C261100877AAC /* Haptic Feedback Test */,
+				C86F047C222C261200877AAC /* Haptic Feedback Test WatchKit App */,
+				C86F048B222C261200877AAC /* Haptic Feedback Test WatchKit Extension */,
+				C86F0467222C261100877AAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C86F0467222C261100877AAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0466222C261100877AAC /* Haptic Feedback Test.app */,
+				C86F0478222C261200877AAC /* Haptic Feedback Test WatchKit App.app */,
+				C86F0487222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C86F0468222C261100877AAC /* Haptic Feedback Test */ = {
+			isa = PBXGroup;
+			children = (
+				C86F0469222C261100877AAC /* AppDelegate.swift */,
+				C86F046B222C261100877AAC /* ViewController.swift */,
+				C86F046D222C261100877AAC /* Main.storyboard */,
+				C86F0470222C261200877AAC /* Assets.xcassets */,
+				C86F0472222C261200877AAC /* LaunchScreen.storyboard */,
+				C86F0475222C261200877AAC /* Info.plist */,
+			);
+			path = "Haptic Feedback Test";
+			sourceTree = "<group>";
+		};
+		C86F047C222C261200877AAC /* Haptic Feedback Test WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				C86F047D222C261200877AAC /* Interface.storyboard */,
+				C86F0480222C261200877AAC /* Assets.xcassets */,
+				C86F0482222C261200877AAC /* Info.plist */,
+			);
+			path = "Haptic Feedback Test WatchKit App";
+			sourceTree = "<group>";
+		};
+		C86F048B222C261200877AAC /* Haptic Feedback Test WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C86F048C222C261200877AAC /* InterfaceController.swift */,
+				C86F048E222C261200877AAC /* ExtensionDelegate.swift */,
+				C86F0490222C261300877AAC /* Assets.xcassets */,
+				C86F0492222C261300877AAC /* Info.plist */,
+			);
+			path = "Haptic Feedback Test WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C86F0465222C261100877AAC /* Haptic Feedback Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86F049D222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test" */;
+			buildPhases = (
+				C86F0462222C261100877AAC /* Sources */,
+				C86F0463222C261100877AAC /* Frameworks */,
+				C86F0464222C261100877AAC /* Resources */,
+				C86F049C222C261300877AAC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C86F047B222C261200877AAC /* PBXTargetDependency */,
+			);
+			name = "Haptic Feedback Test";
+			productName = "Haptic Feedback Test";
+			productReference = C86F0466222C261100877AAC /* Haptic Feedback Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C86F0477222C261200877AAC /* Haptic Feedback Test WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86F0499222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test WatchKit App" */;
+			buildPhases = (
+				C86F0476222C261200877AAC /* Resources */,
+				C86F0498222C261300877AAC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C86F048A222C261200877AAC /* PBXTargetDependency */,
+			);
+			name = "Haptic Feedback Test WatchKit App";
+			productName = "Haptic Feedback Test WatchKit App";
+			productReference = C86F0478222C261200877AAC /* Haptic Feedback Test WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		C86F0486222C261200877AAC /* Haptic Feedback Test WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86F0495222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test WatchKit Extension" */;
+			buildPhases = (
+				C86F0483222C261200877AAC /* Sources */,
+				C86F0484222C261200877AAC /* Frameworks */,
+				C86F0485222C261200877AAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Haptic Feedback Test WatchKit Extension";
+			productName = "Haptic Feedback Test WatchKit Extension";
+			productReference = C86F0487222C261200877AAC /* Haptic Feedback Test WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C86F045E222C261100877AAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Losjet - Alexander Eichhorn";
+				TargetAttributes = {
+					C86F0465222C261100877AAC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C86F0477222C261200877AAC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C86F0486222C261200877AAC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = C86F0461222C261100877AAC /* Build configuration list for PBXProject "Haptic Feedback Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C86F045D222C261100877AAC;
+			productRefGroup = C86F0467222C261100877AAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C86F0465222C261100877AAC /* Haptic Feedback Test */,
+				C86F0477222C261200877AAC /* Haptic Feedback Test WatchKit App */,
+				C86F0486222C261200877AAC /* Haptic Feedback Test WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C86F0464222C261100877AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F0474222C261200877AAC /* LaunchScreen.storyboard in Resources */,
+				C86F0471222C261200877AAC /* Assets.xcassets in Resources */,
+				C86F046F222C261100877AAC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F0476222C261200877AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F0481222C261200877AAC /* Assets.xcassets in Resources */,
+				C86F047F222C261200877AAC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F0485222C261200877AAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F0491222C261300877AAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C86F0462222C261100877AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F046C222C261100877AAC /* ViewController.swift in Sources */,
+				C86F046A222C261100877AAC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C86F0483222C261200877AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F048F222C261200877AAC /* ExtensionDelegate.swift in Sources */,
+				C86F048D222C261200877AAC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C86F047B222C261200877AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86F0477222C261200877AAC /* Haptic Feedback Test WatchKit App */;
+			targetProxy = C86F047A222C261200877AAC /* PBXContainerItemProxy */;
+		};
+		C86F048A222C261200877AAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86F0486222C261200877AAC /* Haptic Feedback Test WatchKit Extension */;
+			targetProxy = C86F0489222C261200877AAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C86F046D222C261100877AAC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86F046E222C261100877AAC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C86F0472222C261200877AAC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86F0473222C261200877AAC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C86F047D222C261200877AAC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C86F047E222C261200877AAC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C86F0493222C261300877AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C86F0494222C261300877AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C86F0496222C261300877AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				INFOPLIST_FILE = "Haptic Feedback Test WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		C86F0497222C261300877AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				INFOPLIST_FILE = "Haptic Feedback Test WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		C86F049A222C261300877AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				IBSC_MODULE = Haptic_Feedback_Test_WatchKit_Extension;
+				INFOPLIST_FILE = "Haptic Feedback Test WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		C86F049B222C261300877AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				IBSC_MODULE = Haptic_Feedback_Test_WatchKit_Extension;
+				INFOPLIST_FILE = "Haptic Feedback Test WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		C86F049E222C261300877AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				INFOPLIST_FILE = "Haptic Feedback Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C86F049F222C261300877AAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83GSA2AB6E;
+				INFOPLIST_FILE = "Haptic Feedback Test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.losjet.Haptic-Feedback-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C86F0461222C261100877AAC /* Build configuration list for PBXProject "Haptic Feedback Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86F0493222C261300877AAC /* Debug */,
+				C86F0494222C261300877AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86F0495222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86F0496222C261300877AAC /* Debug */,
+				C86F0497222C261300877AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86F0499222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86F049A222C261300877AAC /* Debug */,
+				C86F049B222C261300877AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86F049D222C261300877AAC /* Build configuration list for PBXNativeTarget "Haptic Feedback Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86F049E222C261300877AAC /* Debug */,
+				C86F049F222C261300877AAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C86F045E222C261100877AAC /* Project object */;
+}
