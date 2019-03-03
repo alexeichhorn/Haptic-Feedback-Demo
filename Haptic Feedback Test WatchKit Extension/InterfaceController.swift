@@ -12,10 +12,22 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var tableView: WKInterfaceTable!
+    
+    let hapticFeedbacks: [WKHapticType] = [.notification, .directionUp, .directionDown, .success, .failure, .retry, .start, .stop, .click]
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        tableView.setNumberOfRows(hapticFeedbacks.count, withRowType: "Cell")
+        for (i, type) in hapticFeedbacks.enumerated() {
+            let row = tableView.rowController(at: i) as? LabelRowController
+            row?.label.setText(type.localizedDescription)
+        }
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        WKInterfaceDevice.current().play(hapticFeedbacks[rowIndex])
     }
     
     override func willActivate() {
@@ -28,4 +40,26 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+}
+
+class LabelRowController: NSObject {
+    @IBOutlet var label: WKInterfaceLabel!
+}
+
+extension WKHapticType {
+    
+    var localizedDescription: String {
+        switch self {
+        case .notification: return "Notification"
+        case .directionUp: return "Direction Up"
+        case .directionDown: return "Direction Down"
+        case .success: return "Success"
+        case .failure: return "Failure"
+        case .retry: return "Retry"
+        case .start: return "Start"
+        case .stop: return "Stop"
+        case .click: return "Click"
+        }
+    }
+    
 }
