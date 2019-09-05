@@ -14,3 +14,8 @@ Apple Watch App that let's you try out all available haptic feedbacks for your A
 - Start
 - Stop
 - Click
+
+
+
+To play haptic feedback (e.g. notification) in your app, simply call:
+`WKInterfaceDevice.current().play(.notification)`
